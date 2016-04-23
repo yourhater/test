@@ -1,0 +1,58 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+ 
+namespace ConsoleApplication13
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            //Change font color
+            Console.ForegroundColor = ConsoleColor.Black;
+            //Change background color
+            Console.BackgroundColor = ConsoleColor.DarkGray;
+            Console.Clear();
+            Console.WriteLine("*****HeHe*****");
+            Console.WriteLine("1 or 0?");
+            Console.WriteLine("Chose one: ");
+            string langChoise = Console.ReadLine();
+            switch (langChoise)
+            {
+                case "1":
+                    Console.WriteLine("That's good, you chose 1!");
+                    Console.WriteLine("\a");
+                    Console.ReadLine();
+                    Console.Clear();
+                    Console.ReadLine();
+                    break;
+ 
+                case "secretlevel":
+                    Console.WriteLine("Hey! You find a secret!");
+                    Console.WriteLine("\a");
+                    Console.ReadLine();
+                    Console.Clear();
+                    Console.ReadLine();
+                    break;
+ 
+                case "0":
+                    Console.WriteLine("You chose 0!");
+                    Console.WriteLine("\a");
+                    Console.ReadLine();
+                    Console.Clear();
+                    Console.ReadLine();
+                    break;
+ 
+                default:
+                    Console.WriteLine("Why you chose another?");
+                    Console.WriteLine("\a");
+                    Console.ReadLine();
+                    Console.Clear();
+                    Console.ReadLine();
+                    break;
+            }
+        }
+    }
+}
